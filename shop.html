@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Shop Product List</title>
+    <link rel="stylesheet" href="css/1style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="cart.js"></script>
+    
+</head>
+<div class="cart">
+   <!-- <h2>Shopping Cart</h2>-->
+    <ul id="cart-items">
+        <!-- Cart items will be added here dynamically -->
+    </ul>
+</div>
+<body>
+    <div id="items">
+    <h1 style="text-align: center">Product List</h1>
+    <ul class="product-list">
+        
+        <h2>Vegetables & Fruits</h2>
+        <br>
+        <li>
+            <img src="new photos/potato.jpg" alt="potato" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Potato</h2>
+                <h4>1kg</h4>
+                <p class="product-price">Rs300.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+                <button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+            </div>
+        </li>
+        <li>
+			<img src="new photos/beetroot.jpg" alt="beetroot" class="product-image">
+			<div class="product-info">
+                <br>
+				<h2 class="product-name">Beetroot</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs400.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+                
+			</div>
+		</li>
+        <li>
+			<img src="new photos/radish.jpg" alt="radish" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Radish</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs150.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/beans.jpg" alt="beans" class="product-image">
+			<div class="product-info">
+                <br>
+				<h2 class="product-name">Beans</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs400.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+                
+			</div>
+		</li>
+        <li>
+			<img src="new photos/onion.jpg" alt="onion" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Onion</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs250.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+		<li>
+			<img src="new photos/eggplant.jpg" alt="eggplant" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Eggplant</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs450.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+		<li>
+			<img src="new photos/carrot.jpg" alt="carrot" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Carrot</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs600.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/greenchilli.jpg" alt="greenchilli" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">green chilli</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs800.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/tomato.jpg" alt="tomato" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Tomato</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs500.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/pumpkin.jpg" alt="pumpkin" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Pumpkin</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs200.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+		<li>
+			<img src="new photos/cucumber.jpg" alt="cucumber" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Cucumber</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs400.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/okra.jpg" alt="okra" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Okra</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs300.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/spinach.jpg" alt="spinach" class="product-image">
+			<div class="product-info">
+                <br>
+				<h2 class="product-name">Spinach</h2>
+                <h4>Per  1 unit</h4>
+				<p class="product-price">Rs80.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/gotukola.jpg" alt="gotukola" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Gotukola</h2>
+                <h4>Per  1 unit</h4>
+				<p class="product-price">Rs100.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/bellpepper.jpg" alt="bellpepper" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Bellpepper</h2>
+                <h4>100g</h4>
+				<p class="product-price">Rs400.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/apple.jpg" alt="apple" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Apple</h2>
+                <h4>300g</h4>
+				<p class="product-price">Rs670.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/orange.jpg" alt="orange" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Orange</h2>
+                <h4>300g</h4>
+				<p class="product-price">Rs545.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/mango.jpg" alt="mango" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Mango</h2>
+                <h4>300g</h4>
+				<p class="product-price">Rs330.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/papaya.jpg" alt="papaya" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Papaya</h2>
+                <h4>1kg</h4>
+				<p class="product-price">Rs300.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/banana.jpg" alt="banana" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Banana</h2>
+                <h4>300g</h4>
+				<p class="product-price">Rs140.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/pineapple.jpg" alt="pineapple" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Pineapple</h2>
+                <h4>Per  1 unit</h4>
+				<p class="product-price">Rs690.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/grapes.jpg" alt="grapes" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Grapes</h2>
+                <h4>300g</h4>
+				<p class="product-price">Rs900.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+        <li>
+			<img src="new photos/avocado.jpg" alt="avocado" class="product-image">
+			<div class="product-info">
+				<h2 class="product-name">Avocado</h2>
+                <h4>300g</h4>
+				<p class="product-price">Rs135.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+				<button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+			</div>
+		</li>
+    </ul>
+    <ul class="product-list">
+    <h2>Meat & Fish</h2>
+        <li>
+            <img src="new photos/chicken.jpg" alt="chicken" class="product-image">
+            <div class="product-info">
+                <br>
+                <h2 class="product-name">Chicken</h2>
+                <h4>1kg</h4>
+                <p class="product-price">Rs1200.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+                <button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+            </div>
+        </li>
+        <li>
+            <img src="new photos/beef.jpg" alt="beef" class="product-image">
+            <div class="product-info">
+                <br>
+                <h2 class="product-name">Beef</h2>
+                <h4>1kg</h4>
+                <p class="product-price">Rs3000.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+                <button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+            </div>
+        </li>
+        <li>
+            <img src="new photos/pork.jpg" alt="pork" class="product-image">
+            <div class="product-info">
+                <br>
+                <h2 class="product-name">Pork</h2>
+                <h4>1kg</h4>
+                <p class="product-price">Rs1800.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+                <button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+            </div>
+        </li>
+        <li>
+            <img src="new photos/egg.jpg" alt="egg" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Egg</h2>
+                <h4>1 pack</h4>
+                <p class="product-price">Rs300.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+                <button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+            </div>
+        </li>
+        <li>
+            <img src="new photos/sailfish.jpg" alt="sailfish" class="product-image">
+            <div class="product-info">
+                <br>
+                <h2 class="product-name">Sail fish</h2>
+                <h4>1kg</h4>
+                <p class="product-price">Rs3000.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+                <button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+            </div>
+        </li>
+        <li>
+            <img src="new photos/tuna.jpg" alt="tuna" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Tuna</h2>
+                <h4>1kg</h4>
+                <p class="product-price">Rs2500.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+                <button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+            </div>
+        </li>
+        <li>
+            <img src="new photos/cuttlefish.jpg" alt="cuttlefish" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Cuttlefish</h2>
+                <h4>1kg</h4>
+                <p class="product-price">Rs1500.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+                <button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+            </div>
+        </li>
+        <li>
+            <img src="new photos/shrimp.jpg" alt="shrimp" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Shrimp</h2>
+                <h4>1kg</h4>
+                <p class="product-price">Rs2300.00 LKR</p>
+                <input type="number" min="1" value="1" name="p_qty" class="qty">
+                <button class="add-to-cart">Add to Cart</button>
+                <!--<button class="remove-from-cart">Remove from Cart</button>-->
+                </div>
+        </li>
+	</ul>
+    <ul class="product-list">
+    <h2>Pantry Essentials</h2>
+    <li>
+        <img src="new photos/rice.jpg" alt="rice" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Rice</h2>
+            <h4>1kg</h4>
+            <p class="product-price">Rs260.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="add-to-cart">Add to Cart</button>
+            <button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/pasta.jpg" alt="pasta" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Pasta</h2>
+            <h4>1kg</h4>
+            <p class="product-price">Rs500.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="add-to-cart">Add to Cart</button>
+            <button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/flours.jpg" alt="flours" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Flours</h2>
+            <h4>1kg</h4>
+            <p class="product-price">Rs300.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/sugar.jpg" alt="sugar" class="product-image">
+        <div class="product-info">
+            <br>
+            <h2 class="product-name">Sugar</h2>
+            <h4>1kg</h4>
+            <p class="product-price">Rs230.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/salt.jpg" alt="salt" class="product-image">
+        <div class="product-info">
+            <br><br>
+            <h2 class="product-name">Salt</h2>
+            <h4>1kg</h4>
+            <p class="product-price">Rs200.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/coconutoil.jpg" alt="coconutoil" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Coconut oil</h2>
+            <h4>1L</h4>
+            <p class="product-price">Rs550.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/chillipowder.jpg" alt="chillipowder" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Chilli powder</h2>
+            <h4>100g</h4>
+            <p class="product-price">Rs180.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/currypowder.jpg" alt="currypowder" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Curry powder</h2>
+            <h4>100g</h4>
+            <p class="product-price">Rs200.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/turmericpowder.jpg" alt="turmericpowder" class="product-image">
+        <div class="product-info">
+            <br><br><br>
+            <h2 class="product-name">Turmeric powder</h2>
+            <h4>100g</h4>
+            <p class="product-price">Rs300.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/pepperpowder.jpg" alt="pepperpowder" class="product-image">
+        <div class="product-info">
+            <br><br><br>
+            <h2 class="product-name">Pepper powder</h2>
+            <h4>100g</h4>
+            <p class="product-price">Rs300.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/tea.jpg" alt="tea" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Tea</h2>
+            <h4>100g</h4>
+            <p class="product-price">Rs300.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/coffee.jpg" alt="coffee" class="product-image">
+        <div class="product-info">
+            <br>
+            <h2 class="product-name">Coffee</h2>
+            <h4>100g</h4>
+            <p class="product-price">Rs300.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/milkpowder.jpg" alt="milkpowder" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Milk powder</h2>
+            <h4>200g</h4>
+            <p class="product-price">Rs555.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/cereal.jpg" alt="cereal" class="product-image">
+        <div class="product-info">
+            <br><br>
+            <h2 class="product-name">Cereal</h2>
+            <h4>1 pack</h4>
+            <p class="product-price">Rs358.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/tomatosauce.jpg" alt="tomatosauce" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Tomato sauce</h2>
+            <h4>Per  1 unit</h4>
+            <p class="product-price">Rs490.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    </ul>
+    <ul class="product-list">
+    <h2>Snacks & Beverages</h2>
+    <li>
+        <img src="new photos/creamcracker.jpg" alt="creamcracker" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Cream cracker</h2>
+            <h4>1 pack</h4>
+            <p class="product-price">Rs200.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/chunckychoc.jpg" alt="chunckychoc" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Chuncky choc</h2>
+            <h4>1 pack</h4>
+            <p class="product-price">Rs300.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/savourynuts.jpg" alt="savourynuts" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Savoury nuts</h2>
+            <h4>1 pack</h4>
+            <p class="product-price">Rs100.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/kriscocracker.jpg" alt="kriscocracker" class="product-image">
+        <div class="product-info">
+            <br>
+            <h2 class="product-name">Krisco cracker</h2>
+            <h4>Per 1 unit</h4>
+            <p class="product-price">Rs700.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    
+    <li>
+        <img src="new photos/pringles.jpg" alt="pringles" class="product-image">
+        <div class="product-info">
+            <br>
+            <h2 class="product-name">Pringles</h2>
+            <h4>Per 1 unit</h4>
+            <p class="product-price">Rs1000.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/cocacola.jpg" alt="cocacola" class="product-image">
+        <div class="product-info">
+            <br>
+            <h2 class="product-name">Coca cola</h2>
+            <h4>1L</h4>
+            <p class="product-price">Rs400.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/sprite.jpg" alt="sprite" class="product-image">
+        <div class="product-info">
+            <br>
+            <h2 class="product-name">Sprite</h2>
+            <h4>1L</h4>
+            <p class="product-price">Rs300.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/applejuice.jpg" alt="applejuice" class="product-image">
+        <div class="product-info">
+            <br>
+            <h2 class="product-name">Apple juice</h2>
+            <h4>1L</h4>
+            <p class="product-price">Rs1100.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/freshmilk.jpg" alt="freshmilk" class="product-image">
+        <div class="product-info">
+            <h2 class="product-name">Fresh milk</h2>
+            <h4>1l</h4>
+            <p class="product-price">Rs550.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    <li>
+        <img src="new photos/vanila.jpg" alt="vanila" class="product-image">
+        <div class="product-info">
+            <br>
+            <h2 class="product-name">Vanila milk</h2>
+            <h4>1l</h4>
+            <p class="product-price">Rs480.00 LKR</p>
+            <input type="number" min="1" value="1" name="p_qty" class="qty">
+            <button class="add-to-cart">Add to Cart</button>
+            <!--<button class="remove-from-cart">Remove from Cart</button>-->
+        </div>
+    </li>
+    </ul>
+ </div>
+ <!--<script>
+    
+    $(document).ready(function() {
+        $('.add-to-cart').on('click', function() {
+            var productInfo = $(this).closest('.product-info');
+            var productName = productInfo.find('.product-name').text();
+            var productPrice = productInfo.find('.product-price').text();
+            var productQty = productInfo.find('.qty').val();
+            
+            var cartItem = '<li>' + productName + ' - ' + productQty + ' x ' + productPrice + '</li>';
+            $('#cart-items').append(cartItem);
+        });
+    });
+</script>-->
+
+</body>
+</html>

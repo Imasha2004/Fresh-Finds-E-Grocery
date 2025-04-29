@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+   <style>
+      .message {
+         display: none;
+         color: green;
+         font-size: 16px;
+         margin-top: 20px;
+      }
+   </style>
+</head>
+<body>
+   
+<?php include 'header.php'; ?>
+
+<section class="contact">
+
+   <h1 class="title">Get in touch</h1>
+
+   <form id="contactForm" method="POST">
+      <input type="text" name="name" class="box" required placeholder="Enter your name">
+      <input type="email" name="email" class="box" required placeholder="Enter your email">
+      <input type="number" name="number" min="0" class="box" required placeholder="Enter your number">
+      <textarea name="msg" class="box" required placeholder="Enter your message" cols="30" rows="10"></textarea>
+      <input type="submit" value="Send message" class="btn">
+   </form>
+
+   <div class="message" id="successMessage">Message Sent Successfully</div>
+
+</section>
+
+<?php include 'footer.php'; ?>
+
+<script>
+   document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Assuming the form submission is successful
+      const successMessage = document.getElementById('successMessage');
+      successMessage.style.display = 'block';
+
+      // Optionally, you can hide the form after submission
+      // document.getElementById('contactForm').style.display = 'none';
+
+      // Clear the form fields
+      document.getElementById('contactForm').reset();
+   });
+</script>
+
+</body>
+</html>
